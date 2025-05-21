@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a05e91e7b54986e9303bfdf2aca7f25c"
+    tools:context=".tripDetails">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="#D2E7EBDA"
+        android:text="BACK"
+        android:textColor="#CB38522D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <TextView
+        android:id="@+id/trip_no"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="Trip 10"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#38522D"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/trip_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/trip_date"
+        android:layout_width="196dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="12 Jan 2023"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#38522D"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="307dp"
+        android:layout_height="374dp"
+        android:layout_marginBottom="180dp"
+        app:cardBackgroundColor="#D2E7EBDA"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/violationListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"></LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
